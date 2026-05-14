@@ -26,6 +26,11 @@ Basic usage:
 
 Note: MagikaResult.ok is True when identification succeeded, and
 result.output.score reflects the model's confidence (0.0 to 1.0).
+
+See also:
+    - result.output.mime_type for the MIME type string
+    - result.output.group for the broad category (e.g. 'code', 'document')
+    - PredictionMode.HIGH_CONFIDENCE to require a minimum confidence threshold
 """
 
 from magika.magika import Magika
