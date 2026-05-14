@@ -23,6 +23,9 @@ Basic usage:
     >>> result = m.identify_bytes(b"# Hello\nprint('world')")
     >>> print(result.output.ct_label)
     'python'
+
+Note: MagikaResult.ok is True when identification succeeded, and
+result.output.score reflects the model's confidence (0.0 to 1.0).
 """
 
 from magika.magika import Magika
